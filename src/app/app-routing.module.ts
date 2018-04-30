@@ -5,8 +5,6 @@ import {
 } from '@angular/router';
 
 import { MainComponent } from './main/main.component';
-import { ListComponent } from './main/list.component';
-import { AnimationsComponent } from './animations/animations.component';
 
 export const appRoutes: Routes = [
   {
@@ -15,11 +13,11 @@ export const appRoutes: Routes = [
   },
   {
     path: 'list',
-    component: ListComponent
+    loadChildren: 'app/list/list.module#ListModule'
   },
   {
     path: 'animations',
-    component: AnimationsComponent
+    loadChildren: 'app/animations/animations.module#AnimationsModule'
   },
   {
     path: '**',

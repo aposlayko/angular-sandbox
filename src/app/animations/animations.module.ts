@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+
+import { AnimationsRouterModule } from './animations-router.module';
+
 import { AnimationsComponent } from './animations.component';
 
 @NgModule({
-  imports: [ RouterModule ],
+  imports: [ AnimationsRouterModule ],
   providers: [],
   declarations: [ AnimationsComponent ],
   exports: []
